@@ -4,7 +4,7 @@
 /**
  * binary_tree_is_leaf - checks if a node in a tree is a leaf
  * @node: the node to test
- * 
+ *
  * Return: returns 1 if node is a leaf
  *         returns 0 otherwise
 */
