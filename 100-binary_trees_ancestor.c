@@ -8,7 +8,8 @@
  *
  * Return: returns the ancestor if found or NULL if not found
 */
-binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second)
+binary_tree_t *binary_trees_ancestor(
+	const binary_tree_t *first, const binary_tree_t *second)
 {
 	size_t first_depth, second_depth, i, depth_diff;
 	const binary_tree_t *temp;
