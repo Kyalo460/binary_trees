@@ -1,5 +1,5 @@
 #include "binary_trees.h"
-#include <stdio.h>
+
 /**
  * binary_tree_levelorder - prints a binary tree using level-order traversal
  * @tree: pointer to the root of a tree
@@ -13,7 +13,7 @@ void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 		return;
 
 	height = binary_tree_height(tree);
-	printf("Height is %ld\n", height);
+
 	for (i = 0; i <= height; i++)
 	{
 		print_node(tree, i, func);
@@ -35,8 +35,8 @@ void print_node(const binary_tree_t *root, size_t level, void (*func)(int))
 		func(root->n);
 	else
 	{
-		print_node(root->left, level - 1, func);
-		print_node(root->right, level - 1, func);
+		print_node(root->left, (level - 1), func);
+		print_node(root->right, (level - 1), func);
 	}
 }
 
