@@ -19,7 +19,7 @@ int binary_tree_is_complete(const binary_tree_t *tree)
 }
 
 /**
- * count_node - counts the number of nodes in a binary tree
+ * count_nodes - counts the number of nodes in a binary tree
  * @tree: pointer to the root node
  *
  * Return: returns the number of nodes
